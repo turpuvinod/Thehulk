@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 17.729 sec <<< FAILURE!
+feature(runnerfile.runner)  Time elapsed: 16.302 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="x1n2onr6 x78zum5">...</div> is not clickable at point (1483, 28). Other element would receive the click: <div class="x1uvtmcs x4k7w5x x1h91t0o x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1n2onr6 x1qrby5j x1jfb8zj" tabindex="-1">...</div>
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-V2IHHREB', ip: '192.168.0.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92dae45473ce8806fc8f9a5e0aa341d0, clickElement {id=887e8825-2860-4fbb-8134-9104a1319a40}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\vinod\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51323}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51323/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (92dae45473ce8806fc8f9a5e0aa341d0)] -> xpath: //div[@class='x1n2onr6 x78zum5']]
+Session ID: 92dae45473ce8806fc8f9a5e0aa341d0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at fb.pageobject.logout.clickprofile(logout.java:18)
+	at fb.stepdefinitions.stepdef.user_clicks_the_profile(stepdef.java:60)
+	at ?.When user clicks the profile(fb.feature:13)
+
+setup(runnerfile.runner)  Time elapsed: 16.318 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: InputStream cannot be null
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:118)
+	at com.aventstack.extentreports.configuration.ConfigLoader.getConfigurationHash(ConfigLoader.java:64)
+	at com.aventstack.extentreports.reporter.AbstractReporter.loadXMLConfig(AbstractReporter.java:64)
+	at com.aventstack.extentreports.reporter.AbstractReporter.loadXMLConfig(AbstractReporter.java:60)
+	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:47)
+	at runnerfile.runner.setup(runner.java:24)
+

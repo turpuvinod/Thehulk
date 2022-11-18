@@ -1,0 +1,6 @@
+utils\reportingmanager.class
+fb\pageobject\pageobject.class
+fb\pageobject\logout.class
+fb\stepdefinitions\stepdef.class
+foryou\fb\App.class
+fb\base\base.class
